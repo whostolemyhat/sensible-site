@@ -1,0 +1,142 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Signup from "../components/Signup.astro";
+---
+
+<Layout>
+  <div class="container">
+    <main>
+      <h1>Sharky Sharky</h1>
+
+      <figure>
+        <video controls muted="true" autoplay loop class="video">
+          <source
+            src="/sharky-short-2026-07-06-720.mov"
+            type="video/quicktime"
+          />
+          Sorry, your browser doesn't support this video type.
+        </video>
+        <figcaption>
+          Alpha game footage showing a shark chasing fish and earning a powerup.
+        </figcaption>
+      </figure>
+
+      <p>
+        Underwater asteroids! You are a shark: catch tasty fish to eat, but
+        watch out for the stinging jellyfish! Eat more fish to unlock
+        game-changing power ups.
+      </p>
+
+      <p>
+        A casual top-down 2D game, currently in development. Sign up below to
+        get updates!
+      </p>
+
+      <a
+        class="button"
+        href="https://whostolemyhat.itch.io/sharkysharky"
+        title="View on itch.io"
+        target="_blank">Visit on itch.io</a
+      >
+
+      <Signup />
+    </main>
+  </div>
+
+  <footer>
+    <div class="container">A game by Don't Expect Anything Sensible</div>
+  </footer>
+</Layout>
+
+<style>
+  @font-face {
+    font-family: "Bubbleman";
+    src:
+      local("Bubbleman"),
+      url("/fonts/Bubbleman.ttf") format("truetype");
+  }
+
+  body {
+    font-size: 16px;
+    height: 100%;
+    background: #b1dee4;
+    background: linear-gradient(
+        196deg,
+        rgba(177, 222, 228, 1) 0%,
+        rgba(177, 222, 228, 1) 15%,
+        rgba(133, 186, 224, 1) 100%
+      )
+      no-repeat;
+
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .container {
+    color: #2d2d2d;
+    padding: 0;
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+  }
+
+  h1 {
+    color: #111;
+    font-family: "Bubbleman", "Arial Rounded MT Bold";
+    font-size: 64px;
+    margin: 3rem auto 2rem;
+    text-align: center;
+  }
+
+  video {
+    width: 720px;
+    margin: auto;
+  }
+
+  .video {
+    display: block;
+
+    @media (prefers-reduced-motion: reduce) {
+      display: none;
+    }
+  }
+  .video.reduced-motion {
+    display: none;
+
+    @media (prefers-reduced-motion: reduce) {
+      display: block;
+    }
+  }
+
+  footer {
+    margin-top: 2rem;
+    padding: 2rem 0;
+    /* background: hsl(205, 59%, 60%); */
+    border-top: 4px solid white;
+  }
+
+  .button {
+    display: inline-block;
+    background: hotpink;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #111;
+
+    &:hover {
+      background-color: rgb(227, 50, 138);
+    }
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  figcaption {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+</style>

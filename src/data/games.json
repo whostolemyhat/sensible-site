@@ -1,0 +1,26 @@
+[ 
+    {
+    "id": 10,
+    "date": "2026-07-09",
+    "img": "/projects/sharky.png",
+    "link": "/sharky",
+    "title": "Sharky Sharky",
+    "description": "Underwater asteroids! Chase fish and earn powerups, but don't run out of energy!"
+  }, 
+  {
+    "id": 8,
+    "date": "2015-09-15",
+    "img": "/projects/dash.png",
+    "link": "https://runnyblock.jamesbaum.co.uk",
+    "title": "Runny Block",
+    "description": "Dodge obstacles for as long as possible while collecting game-changing power ups. A colourful one-button runner game."
+  },
+    {
+    "id": 6,
+    "date": "2017-04-04",
+    "img": "/projects/flood.png",
+    "link": "https://flood.jamesbaum.co.uk",
+    "title": "FloodIt",
+    "description": "Flood the board with the same colour in as few moves as possible"
+  }
+]
