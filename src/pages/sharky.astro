@@ -10,6 +10,7 @@ import Signup from "../components/Signup.astro";
 
       <figure>
         <video controls muted="true" autoplay loop class="video">
+          <source src="/sharky-short-2026-07-06-720.webm" type="video/webm" />
           <source
             src="/sharky-short-2026-07-06-720.mov"
             type="video/quicktime"
@@ -17,6 +18,7 @@ import Signup from "../components/Signup.astro";
           Sorry, your browser doesn't support this video type.
         </video>
         <video controls muted="true" loop class="video reduced-motion">
+          <source src="/sharky-short-2026-07-06-720.webm" type="video/webm" />
           <source
             src="/sharky-short-2026-07-06-720.mov"
             type="video/quicktime"
@@ -47,6 +49,12 @@ import Signup from "../components/Signup.astro";
       >
 
       <Signup />
+
+      <h3>About</h3>
+      <p>
+        Sharky Sharky is developed in Rust using the Bevy game engine. Art is
+        drawn using Aseprite and Krita.
+      </p>
     </main>
   </div>
 
