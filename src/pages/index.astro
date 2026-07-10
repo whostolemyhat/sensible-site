@@ -1,6 +1,6 @@
 ---
 import Project from "../components/Project.astro";
-import Signup from "../components/Signup.astro";
+import FooterSignup from "../components/FooterSignup.astro";
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
@@ -28,8 +28,10 @@ const games = (await getCollection("projects")).sort(
 
   <footer>
     <div class="container">
-      Don't Expect Anything Sensible
-      <Signup />
+      <h3>Don't Expect Anything Sensible</h3>
+
+      <p>Keep up to date with us by signing up below</p>
+      <FooterSignup />
     </div>
   </footer>
 </Layout>
@@ -44,6 +46,7 @@ const games = (await getCollection("projects")).sort(
 
   footer {
     background-color: #63490f;
+    padding: 1rem 0;
   }
 
   .container {

@@ -25,13 +25,11 @@ const { title, description, img, link, date } = Astro.props;
   }
   <div>
     <h2><a class="project__link" href={link} title={title}>{title}</a></h2>
-    <time datetime={date} class="project__date"
+    <!-- <time datetime={date} class="project__date"
       >{new Date(date).getFullYear()}</time
-    >
+    > -->
     <p class="project__description" set:html={description} />
-    <a class="button" href={link} title={`Visit ${title} site`} target="_blank"
-      >Take a look</a
-    >
+    <a class="button" href={link} title={`Visit ${title} site`}>Take a look</a>
   </div>
 </div>
 
@@ -54,6 +52,7 @@ const { title, description, img, link, date } = Astro.props;
 
   .project {
     width: 100%;
+    max-width: 720px;
     padding: 1rem 0;
     display: flex;
     flex-direction: column;

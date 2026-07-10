@@ -21,9 +21,9 @@ jobs:
         with:
           node-version: 24
       - name: Install
-        run: npm i
+        run: corepack enable pnpm && pnpm i
       - name: Build
-        run: npm run build
+        run: pnpm run build
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2
         with:
