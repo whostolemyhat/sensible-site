@@ -13,7 +13,8 @@
     "img": "/projects/dash.png",
     "link": "https://runnyblock.jamesbaum.co.uk",
     "title": "Runny Block",
-    "description": "Dodge obstacles for as long as possible while collecting game-changing power ups. A colourful one-button runner game."
+    "description": "Dodge obstacles for as long as possible while collecting game-changing power ups. A colourful one-button runner game.",
+    "cta": "Play now"
   },
     {
     "id": 6,
@@ -21,6 +22,7 @@
     "img": "/projects/flood.png",
     "link": "https://flood.jamesbaum.co.uk",
     "title": "FloodIt",
-    "description": "Flood the board with the same colour in as few moves as possible"
+    "description": "Flood the board with the same colour in as few moves as possible",
+    "cta": "Play now"
   }
 ]

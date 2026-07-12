@@ -10,6 +10,7 @@ const ProjectSchema = z.object({
   img: z.string(),
   link: z.string(),
   date: z.string(),
+  cta: z.string().optional()
 });
 
 const projects = defineCollection({

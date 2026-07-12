@@ -4,59 +4,51 @@ import Signup from "../components/Signup.astro";
 ---
 
 <Layout>
-  <div class="container">
-    <main>
-      <h1>Sharky Sharky</h1>
+  <main class="container">
+    <h1>Sharky Sharky</h1>
 
-      <figure>
-        <video controls muted="true" autoplay loop class="video">
-          <source src="/sharky-short-2026-07-06-720.webm" type="video/webm" />
-          <source
-            src="/sharky-short-2026-07-06-720.mov"
-            type="video/quicktime"
-          />
-          Sorry, your browser doesn't support this video type.
-        </video>
-        <video controls muted="true" loop class="video reduced-motion">
-          <source src="/sharky-short-2026-07-06-720.webm" type="video/webm" />
-          <source
-            src="/sharky-short-2026-07-06-720.mov"
-            type="video/quicktime"
-          />
-          Sorry, your browser doesn't support this video type.
-        </video>
-        <figcaption>
-          Alpha game footage showing a shark chasing fish and earning a powerup.
-        </figcaption>
-      </figure>
+    <figure>
+      <video controls muted="true" autoplay loop class="video">
+        <source src="/sharky-short-2026-07-06-720.webm" type="video/webm" />
+        <source src="/sharky-short-2026-07-06-720.mov" type="video/quicktime" />
+        Sorry, your browser doesn't support this video type.
+      </video>
+      <video controls muted="true" loop class="video reduced-motion">
+        <source src="/sharky-short-2026-07-06-720.webm" type="video/webm" />
+        <source src="/sharky-short-2026-07-06-720.mov" type="video/quicktime" />
+        Sorry, your browser doesn't support this video type.
+      </video>
+      <figcaption>
+        Alpha game footage showing a shark chasing fish and earning a powerup.
+      </figcaption>
+    </figure>
 
-      <p>
-        Underwater asteroids! You are a shark: catch tasty fish to eat, but
-        watch out for the stinging jellyfish! Eat more fish to unlock
-        game-changing power ups.
-      </p>
+    <p>
+      Underwater asteroids! You are a shark: catch tasty fish to eat, but watch
+      out for the stinging jellyfish! Eat more fish to unlock game-changing
+      power ups.
+    </p>
 
-      <p>
-        A casual top-down 2D game, currently in development. Sign up below to
-        get updates!
-      </p>
+    <p>
+      A casual top-down 2D game, currently in development. Sign up below to get
+      updates!
+    </p>
 
-      <a
-        class="button"
-        href="https://whostolemyhat.itch.io/sharkysharky"
-        title="View on itch.io"
-        target="_blank">Visit on itch.io</a
-      >
+    <a
+      class="button"
+      href="https://whostolemyhat.itch.io/sharkysharky"
+      title="View on itch.io"
+      target="_blank">Visit on itch.io</a
+    >
 
-      <Signup />
+    <Signup />
 
-      <h3>About</h3>
-      <p>
-        Sharky Sharky is developed in Rust using the Bevy game engine. Art is
-        drawn using Aseprite and Krita.
-      </p>
-    </main>
-  </div>
+    <h3>About</h3>
+    <p>
+      Sharky Sharky is developed in Rust using the Bevy game engine. Art is
+      drawn using Aseprite and Krita.
+    </p>
+  </main>
 
   <footer>
     <div class="container">A game by Don't Expect Anything Sensible</div>
@@ -91,9 +83,12 @@ import Signup from "../components/Signup.astro";
   .container {
     color: #2d2d2d;
     padding: 0;
-    width: 100%;
     max-width: 720px;
     margin: auto;
+
+    @media (max-width: 960px) {
+      padding: 0 1rem;
+    }
   }
 
   h1 {
@@ -106,6 +101,7 @@ import Signup from "../components/Signup.astro";
 
   video {
     width: 720px;
+    max-width: 100%;
     margin: auto;
   }
 
