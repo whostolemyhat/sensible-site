@@ -64,7 +64,10 @@ import Signup from "../components/Signup.astro";
   }
 
   body {
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
+    min-height: 100vh;
     height: 100%;
     background: #b1dee4;
     background: linear-gradient(
@@ -81,6 +84,7 @@ import Signup from "../components/Signup.astro";
   }
 
   .container {
+    flex-grow: 2;
     color: #2d2d2d;
     padding: 0;
     max-width: 720px;
@@ -123,8 +127,7 @@ import Signup from "../components/Signup.astro";
   footer {
     margin-top: 2rem;
     padding: 2rem 0;
-    /* background: hsl(205, 59%, 60%); */
-    border-top: 4px solid white;
+    border-top: 2px solid #c0e4e9;
   }
 
   .button {
